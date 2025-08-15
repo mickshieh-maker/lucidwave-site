@@ -1,0 +1,39 @@
+{
+  "appName": "LucidWave",
+  "tagline": "40 Hz Light & Sound for cognitive stimulation",
+  "featuresLong": [
+    "Immerse yourself in a synchronized 40 Hz light and sound experience designed for focus and relaxation.",
+    "Select between Light + Sound, Light only, or Sound only modes to match your preference.",
+    "Set your own custom session length or pick from quick-start presets for 5, 15, or 30 minutes.",
+    "Get inspired and entertained with lighthearted \u201cfortune cookie\u201d proverbs during your sessions.",
+    "Use sound-only mode in the background while you browse, read, or work in other apps."
+  ],
+  "story": {
+    "lede": "In March 2025, I read an article from MIT about how 40 Hz gamma stimulation could promote brain health. The research suggested it might help support memory and cognitive function \u2014 and it stuck with me.",
+    "mitLink": "https://news.mit.edu/2025/evidence-40hz-gamma-stimulation-promotes-brain-health-expanding-0314",
+    "steps": [
+      {
+        "title": "A Spark from MIT",
+        "body": "That MIT study lit a fire. I wanted to see if there was a simple, everyday way for people to experience a 40 Hz rhythm \u2014 not as a lab experiment, but as a gentle, daily ritual."
+      },
+      {
+        "title": "A Personal Connection",
+        "body": "It took me back to my mom. She was the smartest person I\u2019ve ever known. Toward the end of her life, she didn\u2019t recognize her own family. The brain is a mystery, and without consciousness, we aren\u2019t truly living."
+      },
+      {
+        "title": "Building Something New",
+        "body": "I challenged myself to build something completely new: an app that brings synchronized 40 Hz light and sound into everyday life \u2014 safely and simply."
+      },
+      {
+        "title": "Purpose Beyond the App",
+        "body": "LucidWave is more than an app. 100% of the profit from our small subscription fee will go to brain research, so every session helps advance the science."
+      }
+    ],
+    "quote": "This is for my mom, for everyone who has watched someone they love slip away, and for the science that might one day change that."
+  },
+  "contactEmail": "mick.shieh@gmail.com",
+  "appStore": {
+    "comingSoon": true,
+    "url": ""
+  }
+}
