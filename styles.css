@@ -26,7 +26,7 @@ header {
 }
 
 header img.logo {
-  width: 70px;  /* smaller logo */
+  width: 100px;  /* smaller logo */
   height: auto;
   margin-bottom: 10px;
 }
@@ -49,14 +49,14 @@ header p {
 }
 
 .hero img.app-screenshot {
-  max-width: 100px;  /* much smaller */
+  max-width: 80px;  /* much smaller */
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   margin-bottom: 12px;
 }
 
 .hero img.appstore {
-  max-width: 80px;  /* smaller badge */
+  max-width: 40px;  /* smaller badge */
   height: auto;
   margin-top: 8px;
 }
