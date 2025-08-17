@@ -90,19 +90,21 @@ header p { font-size: 1.05rem; color: #555; margin-top: 6px; }
 }
 .hero .hero-copy {
   max-width: 720px;
-  margin: 12px auto 12px;
+  margin: 16px auto;
   color: #444;
 }
 .hero img.app-screenshot {
-  max-width: 320px;              /* focal visual size */
+  max-width: 480px;              /* bigger app visual */
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14);
-  margin-bottom: 14px;
+  margin-bottom: 16px;
+  width: 100%;
+  height: auto;
 }
 .hero img.appstore {
-  max-width: 200px;              /* coming soon badge */
+  max-width: 260px;              /* bigger badge */
   height: auto;
-  margin-top: 12px;
+  margin-top: 14px;
 }
 
 /* =========
@@ -130,7 +132,7 @@ header p { font-size: 1.05rem; color: #555; margin-top: 6px; }
   display: grid;
   grid-template-columns: 1fr;
   gap: 14px;
-  max-width: 360px;              /* modest size; keep photos small */
+  max-width: 360px;
   margin: 6px auto 0;
 }
 .photo-frame { text-align: center; }
@@ -185,7 +187,7 @@ footer {
    Responsive Tweaks
    ========= */
 @media (max-width: 560px) {
-  .hero img.app-screenshot { max-width: 260px; }
-  .hero img.appstore     { max-width: 180px; }
-  .story-media           { max-width: 300px; }
+  .hero img.app-screenshot { max-width: 340px; }
+  .hero img.appstore       { max-width: 200px; }
+  .story-media             { max-width: 300px; }
 }
