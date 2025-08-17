@@ -1,107 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LucidWave</title>
-  <meta name="description" content="LucidWave — 40 Hz Light & Sound for focus & relaxation." />
-  <meta property="og:title" content="LucidWave — 40 Hz Light & Sound" />
-  <meta property="og:description" content="A minimalist app for synchronized 40 Hz light and sound." />
-  <meta property="og:image" content="assets/og-image.png" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" href="assets/icon.png" />
+  <title>LucidWave — Gentle 40 Hz Light & Sound</title>
+  <meta name="description" content="A gentle, personal tool for 40 Hz light & sound sessions—created in honor of a loved one, with profits donated to brain research." />
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <img src="assets/icon.png" alt="LucidWave logo" class="logo" />
-      <h1 id="appName">LucidWave</h1>
-      <p id="tagline" class="tagline">40 Hz Light & Sound for cognitive stimulation</p>
-      <div class="cta-row" id="ctaRow"></div>
+  <div class="safety-banner" role="note">
+    ⚠️ Strobe warning: If you have a history of photosensitive epilepsy or similar conditions, please consult a clinician before using light flicker.
+  </div>
+
+  <header class="site-header container">
+    <div class="brand">
+      <svg class="brand-logo" viewBox="0 0 64 64" aria-hidden="true">
+        <defs>
+          <linearGradient id="g" x1="0" x2="1">
+            <stop offset="0" stop-color="#6D7FF5"/>
+            <stop offset="1" stop-color="#F6C8B6"/>
+          </linearGradient>
+        </defs>
+        <circle cx="32" cy="32" r="30" fill="url(#g)" opacity="0.18"/>
+        <path d="M6 36c8-8 14-8 22 0s14 8 22 0" fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-name">LucidWave</span>
     </div>
+    <nav class="nav">
+      <a href="#story">Our Story</a>
+      <a href="#how-it-works">How it Works</a>
+      <a href="#safety">Safety</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
-    <section class="section">
-      <div class="container">
-        <h2>Features</h2>
-        <div class="feature-grid" id="featureGrid"></div>
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero-copy">
+        <h1>A gentle way to care for the mind</h1>
+        <p class="lead">
+          LucidWave is a simple app for 40 Hz light & sound sessions—created in honor of my mom, who was the sharpest person I knew.
+          Toward the end, she didn’t recognize her own family. This is my small way to help—yours, too.
+        </p>
+        <div class="cta">
+          <a class="btn-primary" href="#download">Get the app</a>
+          <a class="btn-ghost" href="#story">Read the story</a>
+        </div>
+        <p class="giveback">100% of profits go to brain research.</p>
+      </div>
+
+      <!-- Single Screenshot -->
+      <div class="hero-art">
+        <img src="screenshot.png" alt="LucidWave App Screenshot" class="app-screenshot"/>
       </div>
     </section>
 
-    <section id="story" class="section alt">
-      <div class="container">
-        <h2>Why I Built LucidWave</h2>
-        <p class="lede" id="storyLede"></p>
-        <p><a id="mitLink" href="#" target="_blank" rel="noopener">Read the MIT article</a></p>
-        <div id="timeline" class="timeline"></div>
-        <blockquote class="quote" id="storyQuote"></blockquote>
+    <!-- Why / How -->
+    <section class="trust container" id="how-it-works">
+      <div class="card">
+        <h2>Why 40 Hz?</h2>
+        <p>
+          Early research suggests gamma-frequency (around 40 Hz) stimulation may support brain health. LucidWave offers an easy way
+          to run light and sound sessions—adjust brightness, color, and audio.
+        </p>
+        <p class="small muted">
+          Note: LucidWave is for wellness and self-care. It is not a medical device and does not diagnose, treat, cure, or prevent disease.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Designed for comfort</h3>
+        <ul class="bullets">
+          <li>Choose light color: white, amber, red, or green</li>
+          <li>Timer presets (5/15/30 min) + custom minutes</li>
+          <li>Sound only, light only, or both</li>
+          <li>Background audio support</li>
+        </ul>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>Questions, feedback, or support? Email me or send a message:</p>
-        <p><a id="contactEmail" href="#" class="email"></a></p>
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
-          <input type="hidden" name="form-name" value="contact" />
-          <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
-          <div class="row">
-            <label>Your name<input type="text" name="name" required /></label>
-            <label>Your email<input type="email" name="email" required /></label>
-          </div>
-          <label>Message<textarea name="message" rows="5" required></textarea></label>
-          <button type="submit" class="btn primary">Send</button>
-          <p class="note">Hosting on GoDaddy? The form won’t submit there — use the email link above.</p>
-        </form>
+    <!-- Story -->
+    <section class="story container" id="story">
+      <div class="card">
+        <h2>Made with love</h2>
+        <p>
+          My mom was brilliant—funny, sharp, unstoppable. Watching her memory fade was heartbreaking.
+          LucidWave is my way of honoring her and helping others explore promising brain health practices.
+        </p>
+        <p class="founder-note">— Mick, creator of LucidWave</p>
+      </div>
+    </section>
+
+    <!-- Safety -->
+    <section class="safety container" id="safety">
+      <div class="card">
+        <h2>Safety first</h2>
+        <ul class="bullets">
+          <li>If you have photosensitive epilepsy, consult a clinician first.</li>
+          <li>Start gently: lower brightness, shorter sessions.</li>
+          <li>Stop if you feel discomfort.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section class="download container" id="download">
+      <div class="download-card">
+        <h2>Try LucidWave</h2>
+        <p>Available soon on iPhone and iPad.</p>
+        <div class="badges">
+          <a class="store-badge" href="#"> App Store (coming soon)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact container" id="contact">
+      <div class="contact-card">
+        <h2>Contact Me</h2>
+        <p>Have questions or feedback? I’d love to hear from you.</p>
+        <a class="btn-primary" href="mailto:help@lucidwave.co">Email: help@lucidwave.co</a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container small">
-      <p>© <span id="year"></span> LucidWave. All rights reserved.</p>
-    </div>
+  <footer class="site-footer container">
+    <p class="muted small">© <span id="year"></span> LucidWave. All rights reserved.</p>
   </footer>
 
   <script>
-    fetch('content.json').then(r => r.json()).then(data => {
-      document.getElementById('appName').textContent = data.appName || 'LucidWave';
-      document.getElementById('tagline').textContent = data.tagline || '';
-      const ctaRow = document.getElementById('ctaRow');
-      if (data.appStore?.comingSoon) {
-        const img = document.createElement('img');
-        img.src = 'assets/appstore-coming-soon.png';
-        img.alt = 'Coming Soon on the App Store';
-        img.className = 'badge'; ctaRow.appendChild(img);
-      } else if (data.appStore?.url) {
-        const a = document.createElement('a');
-        a.href = data.appStore.url; a.target = '_blank'; a.rel = 'noopener';
-        a.innerHTML = '<img class="badge" src="assets/appstore-badge.png" alt="Download on the App Store">';
-        ctaRow.appendChild(a);
-      }
-      const grid = document.getElementById('featureGrid');
-      (data.featuresLong||[]).forEach(txt => {
-        const card = document.createElement('div'); card.className = 'f-card';
-        const img = document.createElement('img'); img.src = 'assets/app-main.jpg'; img.alt = 'LucidWave screenshot';
-        const p = document.createElement('p'); p.textContent = txt;
-        card.appendChild(img); card.appendChild(p); grid.appendChild(card);
-      });
-      document.getElementById('storyLede').textContent = data.story?.lede || '';
-      const mit = document.getElementById('mitLink'); if (data.story?.mitLink) mit.href = data.story.mitLink;
-      const tl = document.getElementById('timeline');
-      (data.story?.steps||[]).forEach((s,i) => {
-        const item = document.createElement('div'); item.className = 't-item';
-        item.innerHTML = `<div class="t-badge">${i+1}</div><div class="t-body"><h3>${s.title||''}</h3><p>${s.body||''}</p></div>`;
-        tl.appendChild(item);
-      });
-      document.getElementById('storyQuote').textContent = data.story?.quote || '';
-      const email = data.contactEmail || 'hello@example.com';
-      const emailA = document.getElementById('contactEmail'); emailA.textContent = email; emailA.href = 'mailto:'+email;
-    });
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
