@@ -49,16 +49,16 @@ header p {
 }
 
 .hero img.app-screenshot {
-  max-width: 80px;  /* much smaller */
+  max-width: 60px;  /* much smaller */
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-  margin-bottom: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  margin-bottom: 8px;
 }
 
 .hero img.appstore {
-  max-width: 40px;  /* smaller badge */
+  max-width: 20px;  /* smaller badge */
   height: auto;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 /* Story section */
