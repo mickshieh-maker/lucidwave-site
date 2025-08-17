@@ -1,4 +1,5 @@
-:root {
+/* Soft, warm palette */
+:root{
   --bg: #FAF7F2;
   --panel: #FFFFFF;
   --ink: #2D2A26;
@@ -11,74 +12,156 @@
   --note: #FFF6E5;
 }
 
-body {
-  margin: 0;
-  font-family: "DM Sans", sans-serif;
-  background: var(--bg);
+*{ box-sizing: border-box; }
+html, body { margin:0; padding:0; }
+body{
+  background: radial-gradient(1200px 600px at 80% -10%, #FFF 0%, var(--bg) 60%) fixed;
   color: var(--ink);
+  font-family: "DM Sans", -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
 }
 
-h1, h2, h3 {
-  font-family: "Source Serif 4", serif;
+h1, h2, h3{
+  font-family: "Source Serif 4", Georgia, serif;
+  color: var(--ink);
   margin: 0 0 .5rem;
 }
+h1{ font-size: clamp(2rem, 3vw + 1rem, 3rem); line-height: 1.15; }
+h2{ font-size: clamp(1.6rem, 1.2vw + 1.1rem, 2.1rem); }
+h3{ font-size: clamp(1.25rem, 1vw + 1rem, 1.6rem); }
+.lead{ font-size: clamp(1.05rem, .6vw + 1rem, 1.25rem); color: var(--ink-soft); }
 
-.container { max-width: 960px; margin: auto; padding: 0 20px; }
+/* Layout */
+.container{ max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+.site-header{ display:flex; align-items:center; justify-content:space-between; padding: 18px 20px; }
+.brand{ display:flex; align-items:center; gap:.6rem; }
+.brand-logo{ width: 36px; height:36px; border-radius: 8px; object-fit: cover; }
+.brand-name{ font-weight:700; letter-spacing:.2px; }
+.nav a{ color: var(--ink-soft); text-decoration:none; margin-left:18px; }
+.nav a:hover{ color: var(--ink); }
 
-.safety-banner {
+.safety-banner{
   background: var(--note);
-  color: #7A5A00;
-  padding: 10px;
-  text-align: center;
-  font-size: .9rem;
+  color:#7A5A00;
+  padding:10px 16px;
+  text-align:center;
+  font-size:.9rem;
+  border-bottom: 1px solid #FFE6B8;
 }
 
-.site-header {
-  display: flex; justify-content: space-between; align-items: center;
-  padding: 16px 0;
+.hero{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 44px;
+  align-items:center;
+  padding: 48px 20px 24px;
+}
+.hero-copy .cta{ display:flex; gap:12px; margin-top: 16px; }
+.btn-primary{
+  display:inline-block; background: var(--brand); color:#fff; text-decoration:none;
+  padding: 12px 18px; border-radius: 12px; font-weight:700;
+  box-shadow: 0 6px 18px rgba(109,127,245,.2);
+}
+.btn-primary:hover{ background: var(--brand-strong); }
+.btn-ghost{
+  display:inline-block; text-decoration:none; color: var(--ink);
+  padding: 12px 18px; border-radius: 12px; background: #fff; border:1px solid var(--line);
+}
+.giveback{
+  margin-top: 12px; font-size:.95rem; color: var(--ink);
+  background: linear-gradient(90deg, rgba(246,200,182,.35), rgba(109,127,245,.18));
+  padding:10px 12px; border-radius: 12px;
 }
 
-.nav a { margin-left: 16px; color: var(--ink-soft); text-decoration: none; }
-.nav a:hover { color: var(--ink); }
-
-.hero {
-  display: flex; align-items: center; gap: 40px;
-  padding: 40px 0;
-  flex-wrap: wrap;
-}
-
-.hero-copy { flex: 1; }
-.hero-art { flex: 1; text-align: center; }
+.hero-art{ text-align:center; }
 .app-screenshot {
-  max-width: 260px; border-radius: 20px; box-shadow: 0 6px 18px rgba(0,0,0,.2);
+  width: 100%;
+  max-width: 360px;
+  border-radius: 20px;
+  box-shadow: 0 14px 40px rgba(0,0,0,.14);
 }
 
-.btn-primary {
-  background: var(--brand); color: #fff; padding: 10px 16px; border-radius: 8px;
-  text-decoration: none; font-weight: bold;
+/* Cards / sections */
+.trust{
+  display:grid; grid-template-columns: 1fr 1fr; gap: 22px;
+  padding: 18px 20px 8px;
 }
-.btn-primary:hover { background: var(--brand-strong); }
-.btn-ghost {
-  border: 1px solid var(--line); background: #fff; color: var(--ink);
-  padding: 10px 16px; border-radius: 8px; text-decoration: none;
+.card{
+  background: var(--panel); border:1px solid var(--line); border-radius: 16px;
+  padding: 20px; box-shadow: 0 8px 22px rgba(0,0,0,.04);
+}
+.bullets{ margin: 8px 0 0 0; padding:0 0 0 18px; }
+.small{ font-size:.9rem; }
+.muted{ color: var(--muted); }
+
+/* Story section with soft photo frames */
+.story{ padding: 32px 20px; }
+.story-grid{ display:grid; grid-template-columns: 1.1fr .9fr; gap: 28px; align-items:start; }
+
+.story-media{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
 }
 
-.card {
-  background: var(--panel); border: 1px solid var(--line);
-  border-radius: 12px; padding: 20px; margin-bottom: 20px;
+.photo-frame{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0,0,0,.05);
+  overflow: hidden;
 }
 
-.bullets { padding-left: 20px; }
-.muted { color: var(--muted); }
-.small { font-size: .9rem; }
-
-.contact-card, .download-card {
-  text-align: center; padding: 20px;
-  border: 1px solid var(--line); border-radius: 12px;
+.photo-aspect{
+  /* Keeps images consistent: 4:3 by default; adjusts nicely on mobile */
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  background: #f4f2ef;
+  position: relative;
 }
 
-.site-footer {
-  text-align: center; padding: 20px 0;
-  border-top: 1px solid var(--line); margin-top: 20px;
+.photo{
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: saturate(1.02) contrast(1.02);
+}
+
+/* Placeholder backgrounds (replace with real photos later, or swap to <img>) */
+.ph-1{ background-image: linear-gradient(135deg, #f6c8b6 0%, #6d7ff5 100%); }
+.ph-2{ background-image: linear-gradient(135deg, #ffd7b5 0%, #b7c2ff 100%); }
+
+.photo-caption{
+  padding: 10px 12px;
+  font-size: .92rem;
+  color: var(--ink-soft);
+  background: #fff;
+}
+
+.founder-note{ margin-top: 8px; font-weight:600; color: var(--ink-soft); }
+
+.safety{ padding: 14px 20px 6px; }
+
+.download{ padding: 24px 20px 40px; }
+.download-card{ text-align:center; background: var(--panel); border:1px solid var(--line); border-radius: 16px; padding: 28px; }
+.badges{ margin-top: 10px; }
+.store-badge{
+  display:block; max-width: 210px; margin: 12px auto 0;
+}
+
+.contact{ padding: 24px 20px 64px; }
+.contact-card{
+  text-align:center; background: var(--panel); border:1px solid var(--line); border-radius: 16px; padding: 28px;
+}
+
+.site-footer{ padding: 28px 20px 60px; border-top:1px solid var(--line); margin-top: 8px; }
+.foot-grid{ display:flex; align-items:flex-start; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+.small-brand .brand-logo{ width:28px; height:28px; }
+
+@media (max-width: 960px){
+  .hero{ grid-template-columns: 1fr; text-align:left; }
+  .trust{ grid-template-columns: 1fr; }
+  .story-grid{ grid-template-columns: 1fr; }
+  .hero-art{ order: -1; margin-bottom: 10px; }
 }
