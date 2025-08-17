@@ -8,33 +8,47 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Safety note -->
-  
 
   <!-- Header -->
   <header>
     <img src="assets/icon.png" alt="LucidWave logo" class="logo" />
     <h1>LucidWave</h1>
-    <p>A gentle way to care for the mind. 100% of the profit goes to brain research</p>
+    <p>A gentle way to care for the mind</p>
   </header>
 
-  <!-- Hero -->
   <main class="container">
+
+    <!-- 🔬 Research Highlight (front & center) -->
+    <section class="research-highlight" aria-labelledby="highlight-title">
+      <div class="rh-badge">Research Highlight</div>
+      <h2 id="highlight-title">MIT study on 40&nbsp;Hz gamma stimulation</h2>
+      <p class="rh-copy">
+        Independent research suggests that gamma-frequency (around 40&nbsp;Hz) light and sound stimulation
+        may support brain health. We’re encouraged by the progress and want to make exploration accessible.
+      </p>
+      <a class="rh-button"
+         href="https://news.mit.edu/2025/evidence-40hz-gamma-stimulation-promotes-brain-health-expanding-0314"
+         target="_blank" rel="noopener">
+        Read the MIT article
+      </a>
+    </section>
+
+    <!-- Hero -->
     <section class="hero">
       <img src="assets/app-main.jpg" alt="LucidWave app screenshot" class="app-screenshot" />
-      <p>
-        LucidWave is a simple app for 40 Hz light &amp; sound sessions—created in honor of my mom,
+      <p class="hero-copy">
+        LucidWave is a simple app for 40&nbsp;Hz light &amp; sound sessions—created in honor of my mom,
         who was the sharpest person I knew. Toward the end, she didn’t recognize her own family.
         The brain is a mystery, but there is hope. This is my small way to help—yours, too.
       </p>
-      <img src="assets/appstore-coming-soon.png" alt="Coming soon to the App Store" class="appstore" />
+      <img src="assets/AppStore-coming-soon.png" alt="Coming soon to the App Store" class="appstore" />
     </section>
 
     <!-- Story -->
     <section class="story">
       <h2>Made with love, for someone I love</h2>
       <p>
-        After reading promising research on 40 Hz stimulation, I kept thinking about my mom. She was
+        After reading promising research on 40&nbsp;Hz stimulation, I kept thinking about my mom. She was
         brilliant—funny, sharp, unstoppable. Watching memory fade was heartbreaking. I wanted to do
         something—learn something new, build something useful, and share it widely.
       </p>
@@ -44,14 +58,21 @@
         subscription fee go to brain research.
       </p>
 
-      <!-- Small, soft photo frames (placeholders for now) -->
+      <!-- Real photos with captions -->
       <div class="story-media">
-        <div class="photo-aspect">
-          <div class="photo" style="background-image: linear-gradient(135deg, #f6c8b6 0%, #6d7ff5 100%);"></div>
-        </div>
-        <div class="photo-aspect">
-          <div class="photo" style="background-image: linear-gradient(135deg, #ffd7b5 0%, #b7c2ff 100%);"></div>
-        </div>
+        <figure class="photo-frame">
+          <div class="photo-aspect">
+            <div class="photo" style="background-image: url('assets/mom-tsinghua.jpg');"></div>
+          </div>
+          <figcaption>Mom at Tsinghua University</figcaption>
+        </figure>
+
+        <figure class="photo-frame">
+          <div class="photo-aspect">
+            <div class="photo" style="background-image: url('assets/mom-88.jpg');"></div>
+          </div>
+          <figcaption>Mom at 88</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -62,7 +83,7 @@
         • If you have a history of photosensitive epilepsy or similar conditions, consult a clinician before using light flicker.<br/>
         • Start gently: lower brightness, shorter sessions, comfortable color.<br/>
         • Stop if you feel discomfort, eye strain, dizziness, or headache.<br/>
-        • Run sound mode in the background.
+        • Use in a safe setting—seated or lying down if that’s more comfortable.
       </p>
     </section>
 
@@ -84,3 +105,4 @@
   </script>
 </body>
 </html>
+
