@@ -6,25 +6,18 @@
   <title>LucidWave — Gentle 40 Hz Light & Sound</title>
   <meta name="description" content="A gentle, personal tool for 40 Hz light & sound sessions—created in honor of a loved one, with profits donated to brain research." />
   <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="safety-banner" role="note">
+  <!-- Safety note -->
+  <div class="safety-banner" role="note" aria-label="Strobe safety notice">
     ⚠️ Strobe warning: If you have a history of photosensitive epilepsy or similar conditions, please consult a clinician before using light flicker.
   </div>
 
   <header class="site-header container">
     <div class="brand">
-      <svg class="brand-logo" viewBox="0 0 64 64" aria-hidden="true">
-        <defs>
-          <linearGradient id="g" x1="0" x2="1">
-            <stop offset="0" stop-color="#6D7FF5"/>
-            <stop offset="1" stop-color="#F6C8B6"/>
-          </linearGradient>
-        </defs>
-        <circle cx="32" cy="32" r="30" fill="url(#g)" opacity="0.18"/>
-        <path d="M6 36c8-8 14-8 22 0s14 8 22 0" fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round"/>
-      </svg>
+      <img src="assets/icon.png" alt="LucidWave logo" class="brand-logo" />
       <span class="brand-name">LucidWave</span>
     </div>
     <nav class="nav">
@@ -42,18 +35,21 @@
         <h1>A gentle way to care for the mind</h1>
         <p class="lead">
           LucidWave is a simple app for 40 Hz light & sound sessions—created in honor of my mom, who was the sharpest person I knew.
-          Toward the end, she didn’t recognize her own family. This is my small way to help—yours, too.
+          Toward the end, she didn’t recognize her own family. The brain is a mystery, but there is hope.
+          This is my small way to help—yours, too.
         </p>
         <div class="cta">
           <a class="btn-primary" href="#download">Get the app</a>
           <a class="btn-ghost" href="#story">Read the story</a>
         </div>
-        <p class="giveback">100% of profits go to brain research.</p>
+        <p class="giveback">
+          100% of profits from the small subscription fee go to brain research.
+        </p>
       </div>
 
-      <!-- Single Screenshot -->
+      <!-- Real app screenshot -->
       <div class="hero-art">
-        <img src="screenshot.png" alt="LucidWave App Screenshot" class="app-screenshot"/>
+        <img src="assets/app-main.jpg" alt="LucidWave app screenshot" class="app-screenshot" loading="eager" />
       </div>
     </section>
 
@@ -62,33 +58,58 @@
       <div class="card">
         <h2>Why 40 Hz?</h2>
         <p>
-          Early research suggests gamma-frequency (around 40 Hz) stimulation may support brain health. LucidWave offers an easy way
-          to run light and sound sessions—adjust brightness, color, and audio.
+          Early research suggests that gamma-frequency (around 40 Hz) stimulation may support brain health. LucidWave offers an easy way
+          to run light and sound sessions you control—duration, brightness, color, and audio—so you can build a gentle routine.
         </p>
         <p class="small muted">
           Note: LucidWave is for wellness and self-care. It is not a medical device and does not diagnose, treat, cure, or prevent disease.
         </p>
       </div>
       <div class="card">
-        <h3>Designed for comfort</h3>
+        <h3>Designed to feel safe and soothing</h3>
         <ul class="bullets">
-          <li>Choose light color: white, amber, red, or green</li>
+          <li>Soft visuals, adjustable brightness, color choices (white/amber/red/green)</li>
           <li>Timer presets (5/15/30 min) + custom minutes</li>
-          <li>Sound only, light only, or both</li>
-          <li>Background audio support</li>
+          <li>Sound only, light only, or both—your choice</li>
+          <li>Background audio support so you can use other apps</li>
+          <li>Clear, optional on-screen safety reminder</li>
         </ul>
       </div>
     </section>
 
-    <!-- Story -->
+    <!-- Story with soft photo frames -->
     <section class="story container" id="story">
-      <div class="card">
-        <h2>Made with love</h2>
-        <p>
-          My mom was brilliant—funny, sharp, unstoppable. Watching her memory fade was heartbreaking.
-          LucidWave is my way of honoring her and helping others explore promising brain health practices.
-        </p>
-        <p class="founder-note">— Mick, creator of LucidWave</p>
+      <div class="story-grid">
+        <div class="story-copy">
+          <h2>Made with love, for someone I love</h2>
+          <p>
+            After reading promising research on 40 Hz stimulation, I kept thinking about my mom. She was brilliant—funny, sharp, unstoppable.
+            Watching memory fade was heartbreaking. I wanted to do something—learn something new, build something useful, and share it widely.
+          </p>
+          <p>
+            LucidWave is my personal project turned public invitation: try a gentle practice, share it with someone you care about,
+            and contribute to the science.
+          </p>
+          <div class="founder-note">— Mick, creator of LucidWave</div>
+        </div>
+
+        <!-- Photo grid (drop images in later; placeholders shown) -->
+        <div class="story-media">
+          <figure class="photo-frame" aria-label="Family photo placeholder">
+            <div class="photo-aspect">
+              <!-- Replace placeholder bg with a real photo when ready -->
+              <div class="photo ph-1"></div>
+            </div>
+            <figcaption class="photo-caption">Mom, the original inspiration</figcaption>
+          </figure>
+
+          <figure class="photo-frame" aria-label="Memory photo placeholder">
+            <div class="photo-aspect">
+              <div class="photo ph-2"></div>
+            </div>
+            <figcaption class="photo-caption">Building LucidWave, one tiny step at a time</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -97,9 +118,10 @@
       <div class="card">
         <h2>Safety first</h2>
         <ul class="bullets">
-          <li>If you have photosensitive epilepsy, consult a clinician first.</li>
-          <li>Start gently: lower brightness, shorter sessions.</li>
-          <li>Stop if you feel discomfort.</li>
+          <li>If you have a history of photosensitive epilepsy or similar conditions, consult a clinician before using light flicker.</li>
+          <li>Start gently: lower brightness, shorter sessions, comfortable color.</li>
+          <li>Stop if you feel discomfort, eye strain, dizziness, or headache.</li>
+          <li>Use in a safe setting—seated or lying down if that’s more comfortable.</li>
         </ul>
       </div>
     </section>
@@ -108,9 +130,9 @@
     <section class="download container" id="download">
       <div class="download-card">
         <h2>Try LucidWave</h2>
-        <p>Available soon on iPhone and iPad.</p>
+        <p>Available worldwide on iPhone and iPad.</p>
         <div class="badges">
-          <a class="store-badge" href="#"> App Store (coming soon)</a>
+          <img src="assets/AppStore-coming-soon.png" alt="Coming soon to the App Store" class="store-badge" loading="lazy" />
         </div>
       </div>
     </section>
@@ -119,14 +141,30 @@
     <section class="contact container" id="contact">
       <div class="contact-card">
         <h2>Contact Me</h2>
-        <p>Have questions or feedback? I’d love to hear from you.</p>
+        <p class="muted">
+          Have questions, feedback, or need support? I’d love to hear from you.
+        </p>
         <a class="btn-primary" href="mailto:help@lucidwave.co">Email: help@lucidwave.co</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer container">
-    <p class="muted small">© <span id="year"></span> LucidWave. All rights reserved.</p>
+    <div class="foot-grid">
+      <div>
+        <div class="brand small-brand">
+          <img src="assets/icon.png" alt="LucidWave logo small" class="brand-logo" />
+          <span class="brand-name">LucidWave</span>
+        </div>
+        <p class="muted small">© <span id="year"></span> LucidWave. All rights reserved.</p>
+      </div>
+      <div class="foot-links">
+        <a href="#story">Our Story</a>
+        <a href="#how-it-works">How it Works</a>
+        <a href="#safety">Safety</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
   </footer>
 
   <script>
