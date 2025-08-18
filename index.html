@@ -21,7 +21,7 @@
   <meta name="twitter:site" content="@lucidwave" />
 
   <link rel="icon" type="image/png" href="assets/icon.png" />
-  <link rel="stylesheet" href="styles.css?v=10" />
+  <link rel="stylesheet" href="styles.css?v=13" />
 </head>
 <body>
   <!-- Header -->
@@ -56,10 +56,8 @@
       <p class="hero-copy">
         My mom was one of the sharpest people I’ve ever known—an engineer who graduated from
         Tsinghua University, the top university in China. In her final months, she didn’t recognize
-        her own family. That loss changed me. I’m not an engineer and had no app-building experience,
-        but I decided to challenge myself and create LucidWave so others might not have to go through
-        the same thing unnecessarily. <strong>100% of profits from the subscription go to brain research
-        and supporting brain care.</strong>
+        her own family. That loss changed me. LucidWave is my way of honoring her and helping others.
+        <strong>100% of profits from subscriptions go to brain research and supporting brain care.</strong>
       </p>
       <img src="assets/AppStore-coming-soon.png" alt="Coming soon to the App Store" class="appstore" />
     </section>
@@ -76,12 +74,30 @@
       <p class="muted">LucidWave is for wellness and self-care. It isn’t a medical device and doesn’t diagnose, treat, cure, or prevent disease. If you have a history of photosensitive epilepsy or similar conditions, consult a clinician before using flicker.</p>
     </section>
 
-    <!-- Story (photos + captions) -->
+    <!-- Story (expanded) -->
     <section class="story" id="story" aria-labelledby="story-title">
-      <h2 id="story-title">Made with love, for someone I love</h2>
+      <h2 id="story-title">For My Mom, and for Millions More</h2>
       <p>
-        LucidWave is my personal project turned public invitation: try a gentle practice, share it with
-        someone you care about, and contribute to the science.
+        My mom was one of the sharpest people I’ve ever known. She graduated as an engineer from
+        Tsinghua University, the top university in China, at a time when very few women pursued engineering.
+        From there, she went on to build a highly successful manufacturing company with a global presence—
+        leading teams, traveling the world, and solving complex problems with the sharp mind that defined her.
+      </p>
+      <p>
+        But toward the end of her life, everything changed. The same woman who once could outthink anyone in
+        the room began to slip away. Her days became clouded with confusion, and in her final months, she
+        didn’t recognize anyone—including her own family. Watching someone go from a life of brilliance and
+        accomplishment to struggling through mostly bad days was heartbreaking.
+      </p>
+      <p>
+        That experience stayed with me. I’m not an engineer, and before LucidWave, I had no app-building
+        experience. But I knew I had to do something. Inspired by promising research on 40&nbsp;Hz light and
+        sound stimulation, I challenged myself to create LucidWave—not just as a personal tribute to my mom,
+        but as a way to give others hope and a tool that might help. This app is more than technology—it’s
+        love, memory, and determination translated into action. And because this is about something bigger
+        than me, <strong>100% of profits from subscriptions go directly to brain research and supporting brain care.</strong>
+        My hope is that LucidWave can help millions of people and families who shouldn’t have to go through
+        the same pain unnecessarily.
       </p>
 
       <div class="story-media">
@@ -89,14 +105,14 @@
           <div class="photo-aspect">
             <div class="photo" style="background-image: url('assets/mom-tsinghua.jpg');"></div>
           </div>
-          <figcaption>Mom at Tsinghua University in her late teens</figcaption>
+          <figcaption>Mom at Tsinghua University</figcaption>
         </figure>
 
         <figure class="photo-frame">
           <div class="photo-aspect">
             <div class="photo" style="background-image: url('assets/mom-88.jpg');"></div>
           </div>
-          <figcaption>Mom at 88 in one of her better days</figcaption>
+          <figcaption>Mom at 88</figcaption>
         </figure>
       </div>
     </section>
@@ -142,9 +158,12 @@
       <h2 id="share-title">Share this project</h2>
       <p>If LucidWave resonates with you, share it with others and spread the word:</p>
       <div class="share-buttons">
-        <a href="https://twitter.com/intent/tweet?url=https://lucidwave.co&text=Check%20out%20LucidWave%20%E2%80%94%2040Hz%20light%20%2B%20sound%20for%20brain%20wellness" target="_blank" rel="noopener" class="share-btn twitter" aria-label="Share on Twitter">Twitter</a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://lucidwave.co" target="_blank" rel="noopener" class="share-btn facebook" aria-label="Share on Facebook">Facebook</a>
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lucidwave.co&title=LucidWave%20%E2%80%94%2040Hz%20Light%20%26%20Sound" target="_blank" rel="noopener" class="share-btn linkedin" aria-label="Share on LinkedIn">LinkedIn</a>
+        <a href="https://twitter.com/intent/tweet?url=https://lucidwave.co&text=Check%20out%20LucidWave%20%E2%80%94%2040Hz%20light%20%2B%20sound%20for%20brain%20wellness"
+           target="_blank" rel="noopener" class="share-btn twitter" aria-label="Share on Twitter">Twitter</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://lucidwave.co"
+           target="_blank" rel="noopener" class="share-btn facebook" aria-label="Share on Facebook">Facebook</a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lucidwave.co&title=LucidWave%20%E2%80%94%2040Hz%20Light%20%26%20Sound"
+           target="_blank" rel="noopener" class="share-btn linkedin" aria-label="Share on LinkedIn">LinkedIn</a>
       </div>
     </section>
 
@@ -165,12 +184,12 @@
     // Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Donations — update monthly
-    const DONATION_TO_DATE = "$0"; // e.g., "$1,245"
+    // Donations — update monthly (e.g., "$1,245")
+    const DONATION_TO_DATE = "$0";
     document.getElementById('donation-amount').textContent = DONATION_TO_DATE;
   </script>
 
-  <!-- Visually-hidden helper (for accessibility headings) -->
+  <!-- Visually-hidden helper for accessibility -->
   <style>
     .sr-only {
       position: absolute !important;
@@ -180,7 +199,7 @@
       margin: -1px !important;
       overflow: hidden !important;
       clip: rect(0, 0, 1px, 1px) !important;
-      white-space: nowrap !important; /* added line */
+      white-space: nowrap !important;
       border: 0 !important;
     }
   </style>
