@@ -9,7 +9,7 @@
   <!-- Open Graph -->
   <meta property="og:title" content="LucidWave — Gentle 40 Hz Light & Sound" />
   <meta property="og:description" content="LucidWave offers 40 Hz light & sound sessions. Built to honor a loved one. 100% of profits go to brain research." />
-  <meta property="og:image" content="https://lucidwave.co/assets/icon.png" />
+  <meta property="og:image" content="https://lucidwave.co/assets/og-image.png" />
   <meta property="og:url" content="https://lucidwave.co" />
   <meta property="og:type" content="website" />
 
@@ -17,11 +17,11 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="LucidWave — Gentle 40 Hz Light & Sound" />
   <meta name="twitter:description" content="Gentle 40 Hz light & sound practice. 100% of profits support brain research." />
-  <meta name="twitter:image" content="https://lucidwave.co/assets/icon.png" />
+  <meta name="twitter:image" content="https://lucidwave.co/assets/og-image.png" />
   <meta name="twitter:site" content="@lucidwave" />
 
   <link rel="icon" type="image/png" href="assets/icon.png" />
-  <link rel="stylesheet" href="styles.css?v=13" />
+  <link rel="stylesheet" href="styles.css?v=14" />
 </head>
 <body>
   <!-- Header -->
@@ -29,6 +29,11 @@
     <img src="assets/icon.png" alt="LucidWave logo" class="logo" />
     <h1>LucidWave</h1>
     <p>A gentle way to care for the mind</p>
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="science.html">How it Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main class="container">
@@ -49,17 +54,27 @@
       </a>
     </section>
 
-    <!-- Hero -->
+    <!-- Hero (short, mission- and product-focused) -->
     <section class="hero" aria-labelledby="hero-title">
       <h2 id="hero-title" class="sr-only">About LucidWave</h2>
       <img src="assets/app-main.jpg" alt="LucidWave app screenshot" class="app-screenshot" />
       <p class="hero-copy">
-        My mom was one of the sharpest people I’ve ever known—an engineer who graduated from
-        Tsinghua University, the top university in China. In her final months, she didn’t recognize
-        her own family. That loss changed me. LucidWave is my way of honoring her and helping others.
-        <strong>100% of profits from subscriptions go to brain research and supporting brain care.</strong>
+        LucidWave makes it easy to practice <strong>40&nbsp;Hz light &amp; sound</strong>—with background audio for
+        sound‑only sessions, optional gentle screen flicker, and simple timers that fit your day.
+        Created in honor of a loved one, with a single purpose: make caring for the mind more accessible.
+        <strong>100% of profits from subscriptions are donated to brain research and care.</strong>
       </p>
       <img src="assets/AppStore-coming-soon.png" alt="Coming soon to the App Store" class="appstore" />
+    </section>
+
+    <!-- Science Highlight teaser -->
+    <section class="highlight-science">
+      <h2>The Science Behind LucidWave</h2>
+      <p>
+        Curious about how 40&nbsp;Hz light and sound could support brain health?
+        Learn what researchers are exploring and how LucidWave turns that into a daily habit.
+      </p>
+      <a class="btn-science" href="science.html">Read More</a>
     </section>
 
     <!-- How to practice it -->
@@ -74,7 +89,7 @@
       <p class="muted">LucidWave is for wellness and self-care. It isn’t a medical device and doesn’t diagnose, treat, cure, or prevent disease. If you have a history of photosensitive epilepsy or similar conditions, consult a clinician before using flicker.</p>
     </section>
 
-    <!-- Story (expanded) -->
+    <!-- Story (deeper personal narrative) -->
     <section class="story" id="story" aria-labelledby="story-title">
       <h2 id="story-title">For My Mom, and for Millions More</h2>
       <p>
@@ -117,7 +132,7 @@
       </div>
     </section>
 
-    <!-- Donations so far -->
+    <!-- Donations -->
     <section class="story" id="donations" aria-labelledby="donations-title">
       <h2 id="donations-title">Donations so far</h2>
       <p>Together we can help millions. We donate all profits from subscriptions.</p>
@@ -125,32 +140,6 @@
         <span id="donation-amount">$0</span> raised to date
       </p>
       <p class="muted" style="margin-top:6px;">(Updated monthly)</p>
-    </section>
-
-    <!-- FAQ -->
-    <section class="story" id="faq" aria-labelledby="faq-title">
-      <h2 id="faq-title">FAQ</h2>
-
-      <h3>Is LucidWave a medical treatment?</h3>
-      <p>No. It is a wellness and self-care app. It does not diagnose, treat, cure, or prevent disease.</p>
-
-      <h3>Do I need to stare at the screen?</h3>
-      <p>No. Many users prefer indirect light or sound-only mode. Benefits may still be possible without direct staring.</p>
-
-      <h3>Why a subscription if you donate all profits?</h3>
-      <p>Subscriptions cover hosting and app development costs. Everything beyond that goes to brain research and care.</p>
-
-      <h3>When will the app be on the App Store?</h3>
-      <p>Soon. The iOS app is in preparation for release. Updates will be posted here.</p>
-
-      <h3>Does it work on Android?</h3>
-      <p>Currently iOS only. Android may be considered in the future.</p>
-
-      <h3>How long should I practice daily?</h3>
-      <p>Research often uses ~60 minutes/day. Start small and build up as it fits your schedule.</p>
-
-      <h3>Is it safe for everyone?</h3>
-      <p>Not recommended if you have photosensitive epilepsy or light sensitivity. Reduce brightness, shorten sessions, and stop if uncomfortable.</p>
     </section>
 
     <!-- Share -->
@@ -167,17 +156,45 @@
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Contact Me</h2>
-      <p>Have questions, feedback, or need support? I’d love to hear from you.</p>
-      <p><a href="mailto:help@lucidwave.co">help@lucidwave.co</a></p>
+    <!-- Contact (Variant A) -->
+    <section class="contact contact--card" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact Us</h2>
+      <p class="contact__intro">
+        Questions, feedback, or support—we’d love to hear from you.
+      </p>
+
+      <div class="contact__grid">
+        <div class="contact__panel">
+          <h3>Email</h3>
+          <p>We usually reply within 1–2 business days.</p>
+          <p><a class="btn btn--primary" href="mailto:help@lucidwave.co">help@lucidwave.co</a></p>
+        </div>
+
+        <div class="contact__panel">
+          <h3>Newsletter</h3>
+          <p>Get updates on the app and new research highlights.</p>
+          <p><a class="btn" href="mailto:help@lucidwave.co?subject=Subscribe%20me%20to%20updates">Subscribe via email</a></p>
+        </div>
+
+        <div class="contact__panel">
+          <h3>Social</h3>
+          <p>Follow and share to help others discover LucidWave.</p>
+          <div class="contact__social">
+            <a class="chip chip--tw" href="https://twitter.com/intent/tweet?url=https://lucidwave.co" target="_blank" rel="noopener">Twitter/X</a>
+            <a class="chip chip--fb" href="https://www.facebook.com/sharer/sharer.php?u=https://lucidwave.co" target="_blank" rel="noopener">Facebook</a>
+            <a class="chip chip--in" href="https://www.linkedin.com/shareArticle?mini=true&url=https://lucidwave.co" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="contact__fineprint">We’ll never sell your data. Unsubscribe anytime.</p>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
-    © <span id="year"></span> LucidWave. All rights reserved.
+    © <span id="year"></span> LucidWave. All rights reserved. —
+    <a href="privacy.html">Privacy</a> •
+    <a href="terms.html">Terms</a>
   </footer>
 
   <script>
@@ -205,3 +222,4 @@
   </style>
 </body>
 </html>
+
