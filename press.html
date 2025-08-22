@@ -6,55 +6,33 @@
   <title>LucidWave Press Kit — A Daily Vitamin for Your Mind</title>
   <meta name="description" content="Download LucidWave logos, screenshots, and a one‑pager.">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .press-hero{max-width:960px;margin:2rem auto 1rem;padding:0 1rem;text-align:center;}
-    .press-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;max-width:980px;margin:0 auto;padding:0 1rem 2rem;}
-    .press-card{border:1px solid rgba(0,0,0,.08);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.04);}
-    .press-card img{width:100%;display:block;}
-    .press-card .pad{padding:.85rem;}
-    .press-actions{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin:1rem 0 2rem;}
-    .button{display:inline-block;padding:.7rem 1rem;border-radius:10px;font-weight:600;border:1px solid rgba(0,0,0,.08);}
-    .btn-primary{background:#0a84ff;color:#fff;border-color:#0a84ff;box-shadow:0 4px 12px rgba(10,132,255,.3);}
-    .btn-outline{background:#fff;color:#0a84ff;border-color:#0a84ff;}
-  </style>
 </head>
 <body>
-<header class="press-hero">
+<header style="max-width:960px;margin:2rem auto 1rem;padding:0 1rem;text-align:center;">
   <img src="assets/icon.png" alt="LucidWave logo" style="height:64px;width:64px" />
   <h1>LucidWave Press Kit</h1>
   <p>LucidWave: A Daily Vitamin for Your Mind — Powered by 40 Hz Light & Sound.</p>
-  <div class="press-actions">
+  <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;margin:1rem 0 2rem;">
     <a class="button btn-primary" href="https://testflight.apple.com/join/DXgspmxc" target="_blank" rel="noopener">Join iOS Beta on TestFlight</a>
-    <a class="button btn-outline" href="assets/LucidWave-press-kit.zip" download>Download All Assets (.zip)</a>
+    <a class="button" href="assets/LucidWave-press-kit.zip" download>Download All Assets (.zip)</a>
   </div>
 </header>
-
-<main>
-  <section class="press-grid">
-    <div class="press-card">
-      <img src="assets/app-main-new.jpg" alt="App screenshot">
-      <div class="pad"><strong>Screenshot</strong><br><a href="assets/app-main-new.jpg" download>Download JPG</a></div>
+<main style="max-width:980px;margin:0 auto;padding:0 1rem 2rem;">
+  <section style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;">
+    <div style="border:1px solid rgba(0,0,0,.08);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.04);">
+      <img src="assets/app-main-new.jpg" alt="App screenshot" style="width:100%;display:block;">
+      <div style="padding:.85rem;"><strong>Screenshot</strong><br><a href="assets/app-main-new.jpg" download>Download JPG</a></div>
     </div>
-    <div class="press-card">
-      <img src="assets/og-image-1200x630.png" alt="Open Graph banner">
-      <div class="pad"><strong>OG Banner</strong><br><a href="assets/og-image-1200x630.png" download>Download PNG</a></div>
+    <div style="border:1px solid rgba(0,0,0,.08);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.04);">
+      <img src="assets/og-image-1200x630.png" alt="Open Graph banner" style="width:100%;display:block;">
+      <div style="padding:.85rem;"><strong>OG Banner</strong><br><a href="assets/og-image-1200x630.png" download>Download PNG</a></div>
     </div>
-    <div class="press-card">
-      <img src="assets/icon.png" alt="Logo">
-      <div class="pad"><strong>Logo</strong><br><a href="assets/icon.png" download>Download PNG</a></div>
+    <div style="border:1px solid rgba(0,0,0,.08);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.04);">
+      <img src="assets/icon.png" alt="Logo" style="width:100%;display:block;">
+      <div style="padding:.85rem;"><strong>Logo</strong><br><a href="assets/icon.png" download>Download PNG</a></div>
     </div>
-  </section>
-
-  <section class="press-hero" style="text-align:left">
-    <h2>One‑Pager</h2>
-    <p><strong>What it is:</strong> A calming wellness app that delivers daily 40 Hz light & sound—like a vitamin for your brain—to support clarity, focus, and long‑term cognitive wellness.</p>
-    <p><strong>Who it’s for:</strong> Anyone who wants a simple, science‑inspired daily ritual for mental self‑care.</p>
-    <p><strong>Why it matters:</strong> Emerging research suggests 40 Hz rhythms may help support memory and attention. LucidWave makes it easy to turn that insight into a healthy habit.</p>
-    <p><strong>Availability:</strong> iOS TestFlight beta live now. Android planned.</p>
-    <p><strong>Mission:</strong> 100% of subscription profits are donated to brain research and care.</p>
   </section>
 </main>
-
 <footer class="site-footer">
   <p>© 2025 <strong>LucidWave LLC</strong>. Wellness app; not a medical device.</p>
 </footer>
