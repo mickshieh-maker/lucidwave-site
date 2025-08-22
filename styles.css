@@ -219,3 +219,12 @@ a:hover,a:focus{color:#086ad8;border-bottom-color:rgba(8,106,216,.45);}
   .sticky-start:hover{ background:#086ad8; }
 }
 
+/* --- TestFlight CTA & callout (desktop parity with mobile) --- */
+.download-callout { font-size: 1.1rem; margin: .75rem 0 .35rem; text-align: center; }
+.download-row { display: flex; gap: .75rem; align-items: center; justify-content: center; flex-wrap: wrap; }
+.cta-btn {
+  display: inline-block; background: #0a84ff; color: #fff; padding: .75rem 1.25rem;
+  border-radius: 10px; font-weight: 600; text-decoration: none; box-shadow: 0 4px 12px rgba(10,132,255,.3);
+}
+.cta-btn:hover { background: #086ad8; }
+.badge-link { display: inline-block; border-bottom: 0; }
