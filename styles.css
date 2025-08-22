@@ -194,28 +194,29 @@ footer {
 a{color:#0a84ff;text-decoration:none;border-bottom:1px solid rgba(10,132,255,.25);transition:color .15s ease,border-color .15s ease;}
 a:hover,a:focus{color:#086ad8;border-bottom-color:rgba(8,106,216,.45);}
 
-/* Button styles */
+/* Buttons */
 .button{display:inline-block;padding:.7rem 1rem;border-radius:10px;font-weight:600;border:1px solid rgba(0,0,0,.08);}
 .btn-primary{background:#0a84ff;color:#fff;border-color:#0a84ff;box-shadow:0 4px 12px rgba(10,132,255,.3);}
 .btn-primary:hover{background:#086ad8;border-color:#086ad8;}
 
-/* Callout + FAQ sections */
+/* Beta ribbon, subhero, donation callout, FAQ teaser, footer */
+.beta-ribbon{position:fixed;top:0;right:0;background:#0a84ff;color:#fff;padding:.4rem .65rem;font-weight:600;border-bottom-left-radius:8px;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,.15);}
+.beta-ribbon a{color:#fff;text-decoration:none;}
+.subhero{font-size:1rem;margin-top:.5em;opacity:.9;}
 .donation-callout{background:#f2f8ff;border:1px solid rgba(10,132,255,.15);padding:1rem 1.25rem;margin:1rem auto;border-radius:12px;max-width:920px;}
 .faq-teaser{padding:2rem 1rem;text-align:center;}
 .site-footer{margin-top:2rem;padding:1.25rem 1rem;border-top:1px solid rgba(0,0,0,.08);text-align:center;opacity:.9;}
 .site-footer .footer-links a{margin:0 .35rem;border-bottom:0;}
 
-
-
-/* Sticky mobile start button */
+/* Sticky mobile start */
 @media (max-width: 768px){
   .sticky-start{
     position: fixed; left: 50%; transform: translateX(-50%);
-    bottom: 14px; z-index: 1100;
-    background:#0a84ff; color:#fff; padding: .9rem 1.25rem;
+    bottom: 14px; z-index: 1100; background:#0a84ff; color:#fff; padding: .9rem 1.25rem;
     border-radius: 14px; font-weight:700; box-shadow: 0 10px 24px rgba(10,132,255,.35);
     border: 1px solid rgba(255,255,255,.2);
   }
   .sticky-start:hover{ background:#086ad8; }
 }
+
 
