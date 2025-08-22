@@ -1,222 +1,186 @@
-/* Base Reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+/* ========== Base ========== */
+:root{
+  --blue:#0a84ff;
+  --blue-d:#086ad8;
+  --ink:#111;
+  --muted:#666;
+  --line:rgba(0,0,0,.08);
+  --bg:#fff;
+  --bg-soft:#f7f9fc;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+img{max-width:100%;display:block}
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: #fdfdfd;
-  color: #333;
-  line-height: 1.6;
-}
+/* ========== Layout ========== */
+header, .container{max-width:980px;margin:0 auto;padding:1rem}
+header .logo{height:64px;width:64px}
+h1{margin:.5rem 0 .25rem;font-size:2rem;line-height:1.2}
+header p{margin:.25rem 0 1rem;opacity:.95}
 
-/* Container */
-.container { width: 90%; max-width: 1000px; margin: 0 auto; padding: 1.5rem 0; }
-
-/* Header */
-header { text-align: center; padding: 2rem 0 1.2rem; }
-header .logo { width: 90px; height: 90px; margin-bottom: 1rem; border-radius: 12px; }
-header h1 { font-size: 2.2rem; margin-bottom: 0.3rem; }
-header p  { font-size: 1.1rem; color: #666; }
-
-.topnav { margin-top: .6rem; }
-.topnav a {
-  display: inline-block; margin: 0 .4rem; padding: .3rem .6rem;
-  text-decoration: none; color: #0b73c8; border-radius: 6px;
+/* Top nav */
+.topnav a{
+  margin-right:.75rem;
+  color:var(--ink);
+  text-decoration:none;
+  padding:.25rem .35rem;
+  border-radius:8px;
+  border:1px solid transparent;
 }
-.topnav a:hover, .topnav a.active { background: #eef6ff; }
-
-/* Research Highlight */
-.research-highlight {
-  background: #fff4db; border: 1px solid #ffe2a8; border-radius: 12px;
-  padding: 1.5rem; margin: 1.5rem 0; text-align: center;
-}
-.rh-badge {
-  display: inline-block; background: #ffb347; color: #fff;
-  font-size: 0.8rem; padding: 0.3rem 0.7rem; border-radius: 20px; margin-bottom: 0.8rem;
-}
-.research-highlight h2 { font-size: 1.6rem; margin-bottom: 0.6rem; }
-.research-highlight .rh-copy { margin-bottom: 1rem; }
-.rh-button {
-  display: inline-block; padding: 0.6rem 1.2rem; background: #ff9800; color: #fff;
-  text-decoration: none; border-radius: 6px; font-weight: 600; transition: background .2s;
-}
-.rh-button:hover { background: #e68900; }
-
-/* Hero */
-.hero { text-align: center; margin: 2rem 0; }
-.hero img.app-screenshot { max-width: 260px; width: 80%; border-radius: 10px; margin-bottom: 1rem; }
-.hero p.hero-copy { font-size: 1.1rem; margin-bottom: 1.2rem; color: #444; }
-.hero img.appstore { max-width: 200px; width: 70%; }
-
-/* Science teaser */
-.highlight-science {
-  text-align: center; background: #eef6ff; border: 1px solid #d9ebff;
-  border-radius: 12px; padding: 1.2rem; margin: 1.5rem 0;
-}
-.highlight-science h2 { margin-bottom: .2rem; }
-.btn-science {
-  display: inline-block; margin-top: .6rem; padding: .5rem .9rem;
-  border-radius: 8px; text-decoration: none; color: #fff; background: #0b73c8; font-weight: 600;
-}
-.btn-science:hover { filter: brightness(.95); }
-
-/* About teaser */
-.about-teaser {
-  text-align: center; background: #f7fbff; border: 1px solid #e8f1ff;
-  border-radius: 12px; padding: 1.2rem; margin: 1.6rem 0;
-}
-.about-teaser h2 { margin-bottom: .4rem; }
-.btn-about {
-  display: inline-block; margin-top: .6rem; padding: .5rem .9rem;
-  border-radius: 8px; text-decoration: none; color: #fff; background: #0b73c8; font-weight: 600;
-}
-.btn-about:hover { filter: brightness(.95); }
-
-/* Story & generic sections */
-.story { margin: 2.2rem 0; }
-.story h2 { font-size: 1.5rem; margin-bottom: 0.8rem; text-align: center; }
-.story p { margin-bottom: 0.8rem; text-align: left; }
-.muted { color: #777; font-size: 0.95rem; }
-
-/* Photos */
-.story-media {
-  display: flex; flex-wrap: wrap; justify-content: center; gap: 1.2rem; margin-top: 1rem;
-}
-.photo-frame { width: 280px; text-align: center; }
-.photo-aspect {
-  width: 100%; padding-top: 75%; position: relative; border-radius: 10px;
-  overflow: hidden; box-shadow: 0 3px 6px rgba(0,0,0,.12);
-}
-.photo {
-  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-  background-size: cover; background-position: center;
-}
-figcaption { margin-top: 0.5rem; font-size: 0.9rem; color: #555; }
-
-/* Donations */
-#donations p { text-align: center; }
-
-/* Share Buttons */
-.share-buttons { display: flex; justify-content: center; gap: 0.8rem; margin-top: 1rem; }
-.share-btn {
-  padding: 0.6rem 1.2rem; color: #fff; border-radius: 5px; text-decoration: none;
-  font-size: 0.9rem; font-weight: 600; transition: opacity 0.2s;
-}
-.share-btn:hover { opacity: 0.85; }
-.share-btn.twitter  { background: #1da1f2; }
-.share-btn.facebook { background: #1877f2; }
-.share-btn.linkedin { background: #0077b5; }
-
-/* Contact (card style) */
-.contact--card {
-  background: #ffffff; border: 1px solid #eee; border-radius: 12px;
-  padding: 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-.contact__intro { text-align: center; max-width: 660px; margin: 0.4rem auto 1.2rem; color: #555; }
-.contact__grid { display: grid; gap: 1rem; margin-top: 0.5rem; }
-@media (min-width: 820px) { .contact__grid { grid-template-columns: repeat(3, 1fr); } }
-.contact__panel {
-  background: #fafafa; border: 1px solid #f0f0f0; border-radius: 10px; padding: 1rem;
-}
-.contact__panel h3 { margin-bottom: 0.4rem; font-size: 1.1rem; color: #333; }
-
-.btn {
-  display: inline-block; padding: 0.55rem 1rem; border-radius: 8px; text-decoration: none;
-  font-weight: 600; color: #333; background: #eee;
-}
-.btn:hover { filter: brightness(0.95); }
-.btn--primary { background: #0077b5; color: #fff; }
-
-.contact__social { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.chip {
-  display: inline-block; padding: 0.4rem 0.7rem; border-radius: 999px; font-size: 0.9rem; color: #fff; text-decoration: none;
-}
-.chip--tw { background: #1da1f2; } .chip--fb { background: #1877f2; } .chip--in { background: #0077b5; }
-.contact__fineprint { text-align: center; margin-top: 1rem; color: #777; font-size: 0.95rem; }
-
-/* Science page/section (shared if you reuse on science.html) */
-.page-header {
-  background: #f7fbff; border-bottom: 1px solid #e8f1ff; padding: 1.2rem 0; text-align: center;
-}
-.page-header h1 { margin-top: .6rem; }
-
-/* Science card styles reused site-wide when needed */
-.science {
-  background: #ffffff; border: 1px solid #eee; border-radius: 12px;
-  padding: 1.8rem; margin: 2rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
-.science__header { text-align: center; margin-bottom: 1rem; }
-.science__header h2 { font-size: 1.75rem; margin-bottom: .4rem; color: #222; }
-.science__intro { max-width: 780px; margin: 0 auto; color: #555; }
-.science__block { margin: 1.2rem 0; }
-.science__block h3 { font-size: 1.3rem; margin-bottom: .5rem; color: #222; }
-.science__summary {
-  background: #faf7ff; border: 1px solid #ece3ff; border-radius: 10px; padding: 1rem;
-}
-.science__bullets { list-style: disc; padding-left: 1.2rem; color: #444; }
-.science__cta { margin-top: .6rem; }
-.science__columns { display: grid; gap: 1rem; }
-@media (min-width: 820px) { .science__columns { grid-template-columns: 1fr 1fr; } }
-.science__card { background: #fbfbfb; border: 1px solid #eee; border-radius: 10px; padding: 1rem; }
-.science__card h4 { margin-bottom: .5rem; color: #333; }
-.science__card ul { list-style: disc; padding-left: 1.2rem; color: #444; }
-.science__steps { counter-reset: step; list-style: none; padding-left: 0; }
-.science__steps li {
-  counter-increment: step; margin: .5rem 0; padding-left: 2rem; position: relative; color: #444;
-}
-.science__steps li::before {
-  content: counter(step); position: absolute; left: 0; top: 0; width: 1.4rem; height: 1.4rem;
-  border-radius: 999px; background: #ffb347; color: #fff; font-size: .9rem;
-  display: inline-flex; align-items: center; justify-content: center;
-}
-.science__note {
-  background: #fff8e6; border: 1px solid #ffe2a8; border-radius: 10px; padding: 1rem; color: #614a00;
-}
-.science__refs ul { list-style: disc; padding-left: 1.2rem; }
-.science__refs a { color: #0b73c8; text-decoration: none; }
-.science__refs a:hover { text-decoration: underline; }
-
-/* Footer */
-footer {
-  text-align: center; padding: 1.2rem 0; font-size: 0.9rem; color: #777;
-  border-top: 1px solid #eee; margin-top: 2rem;
+.topnav a.active,
+.topnav a:hover{
+  border-color:var(--line);
+  background:rgba(0,0,0,.03);
 }
 
-/* Responsive tweaks */
-@media (min-width: 768px) {
-  .hero img.app-screenshot { max-width: 320px; }
-  .hero img.appstore       { max-width: 220px; }
-  .photo-frame             { width: 320px; }
+/* Links */
+a{
+  color:var(--blue);
+  text-decoration:none;
+  border-bottom:1px solid rgba(10,132,255,.25);
+  transition:color .15s ease,border-color .15s ease,background .15s ease;
 }
-
-
-
-/* Link styling */
-a{color:#0a84ff;text-decoration:none;border-bottom:1px solid rgba(10,132,255,.25);transition:color .15s ease,border-color .15s ease;}
-a:hover,a:focus{color:#086ad8;border-bottom-color:rgba(8,106,216,.45);}
+a:hover{color:var(--blue-d);border-bottom-color:rgba(8,106,216,.45)}
 
 /* Buttons */
-.button{display:inline-block;padding:.7rem 1rem;border-radius:10px;font-weight:600;border:1px solid rgba(0,0,0,.08);}
-.btn-primary{background:#0a84ff;color:#fff;border-color:#0a84ff;box-shadow:0 4px 12px rgba(10,132,255,.3);}
-.btn-primary:hover{background:#086ad8;border-color:#086ad8;}
+.button,
+.btn,
+.cta-btn{
+  display:inline-block;
+  padding:.7rem 1rem;
+  border-radius:10px;
+  font-weight:600;
+  border:1px solid var(--blue);
+  background:var(--blue);
+  color:#fff;
+  box-shadow:0 4px 12px rgba(10,132,255,.3);
+}
+.button:hover,
+.btn:hover,
+.cta-btn:hover{background:var(--blue-d);border-color:var(--blue-d)}
+.btn-primary{background:var(--blue);color:#fff;border-color:var(--blue)}
 
-/* Beta ribbon, subhero, donation callout, FAQ teaser, footer */
-.beta-ribbon{position:fixed;top:0;right:0;background:#0a84ff;color:#fff;padding:.4rem .65rem;font-weight:600;border-bottom-left-radius:8px;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,.15);}
-.beta-ribbon a{color:#fff;text-decoration:none;}
-.subhero{font-size:1rem;margin-top:.5em;opacity:.9;}
-.donation-callout{background:#f2f8ff;border:1px solid rgba(10,132,255,.15);padding:1rem 1.25rem;margin:1rem auto;border-radius:12px;max-width:920px;}
-.faq-teaser{padding:2rem 1rem;text-align:center;}
-.site-footer{margin-top:2rem;padding:1.25rem 1rem;border-top:1px solid rgba(0,0,0,.08);text-align:center;opacity:.9;}
-.site-footer .footer-links a{margin:0 .35rem;border-bottom:0;}
+/* App store / badge */
+.appstore{height:44px}
+.badge-link{display:inline-block;border-bottom:0;margin-left:.75rem}
 
-/* Sticky mobile start */
-@media (max-width: 768px){
-  .sticky-start{
-    position: fixed; left: 50%; transform: translateX(-50%);
-    bottom: 14px; z-index: 1100; background:#0a84ff; color:#fff; padding: .9rem 1.25rem;
-    border-radius: 14px; font-weight:700; box-shadow: 0 10px 24px rgba(10,132,255,.35);
-    border: 1px solid rgba(255,255,255,.2);
-  }
-  .sticky-start:hover{ background:#086ad8; }
+/* Callouts */
+.donation-callout{
+  background:#f2f8ff;
+  border:1px solid rgba(10,132,255,.15);
+  padding:1rem 1.25rem;
+  margin:1rem auto;
+  border-radius:12px;
+  max-width:980px;
 }
 
+/* Research highlight */
+.research-highlight{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:1rem;
+  margin:1rem 0 1.25rem;
+  box-shadow:0 2px 12px rgba(0,0,0,.04);
+}
+.rh-badge{
+  display:inline-block;
+  font-size:.8rem;
+  background:var(--bg-soft);
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:.2rem .55rem;
+  margin-bottom:.5rem;
+}
+.rh-button{
+  display:inline-block;
+  margin-top:.5rem;
+  padding:.55rem .9rem;
+  border:1px solid var(--blue);
+  color:#fff;
+  background:var(--blue);
+  border-radius:10px;
+}
 
+/* Hero */
+.hero{margin:1.25rem 0}
+.app-screenshot{
+  border-radius:14px;
+  box-shadow:0 6px 24px rgba(0,0,0,.08);
+}
+.hero-copy{margin:.9rem 0 1rem}
+.download-callout{font-size:1.1rem;margin:.75rem 0 .35rem}
+.download-row{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap}
+
+/* Sections */
+.highlight-science,.about-teaser,.story{margin:1.25rem 0}
+.story-media{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1rem;
+  margin-top:.75rem;
+}
+.photo-frame{margin:0}
+.photo-aspect{position:relative;width:100%;padding-top:75%;overflow:hidden;border-radius:12px;border:1px solid var(--line);background:#fafafa}
+.photo{
+  position:absolute;inset:0;background-size:cover;background-position:center;
+}
+.muted{color:var(--muted)}
+
+/* Share buttons (simple) */
+.share-buttons{display:flex;gap:.5rem;flex-wrap:wrap}
+.share-btn{
+  display:inline-block;
+  border:1px solid var(--line);
+  padding:.45rem .7rem;border-radius:8px;background:#fff;
+}
+.share-btn:hover{background:#f5f7fb}
+
+/* Contact */
+.contact--card{
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:1rem;
+  background:#fff;
+  box-shadow:0 2px 12px rgba(0,0,0,.04);
+}
+.contact__grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1rem;margin-top:.75rem;
+}
+.contact__panel{
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:.85rem;background:#fafcff;
+}
+.contact__intro{margin:.25rem 0 1rem}
+.contact__fineprint{margin-top:.5rem;color:var(--muted);font-size:.95rem}
+.chip{
+  display:inline-block;padding:.35rem .6rem;border-radius:999px;border:1px solid var(--line);
+  font-size:.9rem;background:#fff;margin-right:.35rem
+}
+
+/* FAQ teaser */
+.faq-teaser{text-align:center;padding:2rem 0}
+.faq-teaser .button{border-color:var(--blue)}
+
+/* Footer */
+.site-footer{
+  margin-top:2rem;padding:1.25rem 1rem;border-top:1px solid var(--line);
+  text-align:center;opacity:.9
+}
+.site-footer .footer-links a{margin:0 .35rem;border-bottom:0}
+
+/* ========== Responsive ========== */
+@media (max-width:768px){
+  .download-row{justify-content:flex-start}
+  .topnav a{margin-right:.5rem}
+}
