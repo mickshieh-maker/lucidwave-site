@@ -228,3 +228,70 @@ a:hover,a:focus{color:#086ad8;border-bottom-color:rgba(8,106,216,.45);}
 }
 .cta-btn:hover { background: #086ad8; }
 .badge-link { display: inline-block; border-bottom: 0; }
+
+
+/* ===== LucidWave soft theme additions (non-breaking) ===== */
+:root{
+  --ink:#1e293b; --sub:#475569; --bg:#faf9f7; --card:#ffffff;
+  --line:#e6edf2; --teal:#0a84ff; --peach:#ffe8df; --lav:#f3ecff; --mint:#dcfff6;
+}
+body.soft-theme{ background: var(--bg); color: var(--ink); }
+.hero.soft { background: linear-gradient(180deg,#f9fbff 0%, #ffffff 100%); }
+.panel{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px; }
+.kicker{ font-size:.85rem; font-weight:700; letter-spacing:.04em; color:#0b73c8; text-transform:uppercase; }
+.btn{ display:inline-block; padding:.7rem 1rem; border-radius:10px; text-decoration:none; font-weight:600; }
+.btn--primary{ background:#0a84ff; color:#fff; box-shadow:0 4px 12px rgba(10,132,255,.25); }
+.btn--primary:hover{ filter:brightness(.95); }
+.btn--ghost{ background:#fff; color:#0a84ff; border:1px solid #cfe6ff; }
+.wrap{ width:90%; max-width:1000px; margin:0 auto; }
+
+/* Email join form */
+.join { margin:2rem 0; }
+.join .panel { text-align:center; }
+.join h3 { margin-bottom:.4rem; }
+.join p { color:#475569; margin:.3rem 0 .8rem; }
+.join form { display:grid; gap:.6rem; grid-template-columns: 1fr; max-width:600px; margin:.6rem auto 0; }
+.join input, .join textarea, .join select {
+  width:100%; padding:.7rem .8rem; border:1px solid var(--line); border-radius:10px; font:inherit;
+}
+.join .form-row { display:grid; gap:.6rem; }
+@media (min-width: 720px){
+  .join form{ grid-template-columns: 1.2fr 1fr auto; }
+  .join .form-row{ grid-template-columns: 1fr 1fr; }
+}
+.join .note{ font-size:.9rem; color:#64748b; margin-top:.4rem; }
+
+/* Share actions */
+.share-actions { display:flex; gap:.6rem; justify-content:center; flex-wrap:wrap; margin-top:.6rem; }
+.share-actions .chip { display:inline-block; padding:.45rem .7rem; border-radius:20px; border:1px solid #e2e8f0; text-decoration:none; color:#0b73c8; background:#fff; }
+.share-actions .chip:hover{ background:#f1f7ff; }
+
+
+/* === Mailchimp embed (blends with site) === */
+#mc_embed_signup{background:#fff; font:inherit; width:100%; border:1px solid #eee; border-radius:12px; padding:14px}
+#mc_embed_signup h2{margin:.2rem 0 .6rem}
+#mc_embed_signup .mc-field-group{margin:.5rem 0}
+#mc_embed_signup input, #mc_embed_signup select{width:100%; padding:.6rem .7rem; border:1px solid #e6edf2; border-radius:10px; font:inherit}
+#mc-embedded-subscribe{background:#0a84ff; color:#fff; border:0; border-radius:10px; padding:.7rem 1rem; font-weight:600}
+#mc-embedded-subscribe:hover{filter:brightness(.95)}
+
+/* === Soft theme helpers (non-breaking) === */
+body.soft-theme{ background: #faf9f7; color:#1e293b; }
+.hero.soft { background: linear-gradient(180deg,#f9fbff 0%, #ffffff 100%); }
+.panel{ background:#ffffff; border:1px solid #e6edf2; border-radius:14px; padding:20px; }
+.btn--primary{ background:#0a84ff; color:#fff; box-shadow:0 4px 12px rgba(10,132,255,.25); }
+.btn--primary:hover{ filter:brightness(.95); }
+
+/* === Join section layout (mobile-first) === */
+.join { margin:2rem 0; }
+.join form { display:grid; gap:.6rem; grid-template-columns: 1fr; max-width:600px; margin:.6rem auto 0; }
+.join .form-row { display:grid; gap:.6rem; }
+@media (min-width: 720px){
+  .join form{ grid-template-columns: 1fr 1fr; }
+}
+.join .note{ font-size:.9rem; color:#64748b; margin-top:.4rem; }
+
+/* === Share actions (mobile-first) === */
+.share-actions, .share-buttons { display:flex; gap:.6rem; justify-content:center; flex-wrap:wrap; margin-top:.6rem; }
+.share-actions .chip, .share-buttons a { display:inline-block; padding:.45rem .7rem; border-radius:20px; border:1px solid #e2e8f0; text-decoration:none; color:#0b73c8; background:#fff; }
+.share-actions .chip:hover, .share-buttons a:hover{ background:#f1f7ff; }
