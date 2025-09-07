@@ -5,15 +5,15 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>LucidWave: A Daily Vitamin for Your Mind</title>
-<meta content="LucidWave is your daily brain vitamin. A simple 40 Hz light &amp; sound practice to support clarity, focus, and long‑term cognitive wellness." name="description"/>
+<meta content="LucidWave is your daily brain vitamin. A simple 40 Hz light &amp; sound practice to support clarity, focus, and long-term cognitive wellness." name="description"/>
 <!-- Open Graph / Twitter -->
 <meta content="LucidWave: A Daily Vitamin for Your Mind" property="og:title"/>
-<meta content="Your daily brain vitamin — supporting focus, clarity, and long‑term wellness through 40 Hz light &amp; sound." property="og:description"/>
+<meta content="Your daily brain vitamin — supporting focus, clarity, and long-term wellness through 40 Hz light &amp; sound." property="og:description"/>
 <meta content="assets/og-image-1200x630.png" property="og:image"/>
 <meta content="website" property="og:type"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="LucidWave: A Daily Vitamin for Your Mind" name="twitter:title"/>
-<meta content="Your daily brain vitamin — supporting focus, clarity, and long‑term wellness through 40 Hz light &amp; sound." name="twitter:description"/>
+<meta content="Your daily brain vitamin — supporting focus, clarity, and long-term wellness through 40 Hz light &amp; sound." name="twitter:description"/>
 <meta content="assets/og-image-1200x630.png" name="twitter:image"/>
 <link href="assets/icon.png" rel="icon" type="image/png"/>
 <link href="styles.css?v=18" rel="stylesheet"/>
@@ -41,9 +41,9 @@
 <!-- 🔬 Research Highlight -->
 <section aria-labelledby="highlight-title" class="research-highlight">
 <div class="rh-badge">Research Highlight</div>
-<h2 id="highlight-title">MIT study on 40 Hz gamma stimulation</h2>
+<h2 id="highlight-title">MIT study on 40 Hz gamma stimulation</h2>
 <p class="rh-copy">
-        Emerging research suggests that gamma‑frequency (around 40 Hz) light and sound stimulation
+        Emerging research suggests that gamma-frequency (around 40 Hz) light and sound stimulation
         may support aspects of brain health. We’re encouraged by the growing body of work—from MIT and other labs—and
         want to make exploration accessible to everyone.
       </p>
@@ -54,11 +54,42 @@
 <!-- Hero (product + mission) -->
 <section aria-labelledby="hero-title" class="hero">
 <h2 class="sr-only" id="hero-title">About LucidWave</h2>
-<!-- NEW screenshot -->
-<img alt="LucidWave app screenshot" class="app-screenshot" src="assets/app-main-new.jpg"/>
+
+<!-- BEGIN: LucidWave hero screenshots (responsive) -->
+<style>
+  /* Scoped styles for the screenshot gallery */
+  .app-screenshots { 
+    display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; 
+    margin: 1.5rem 0;
+  }
+  .app-screenshots picture, .app-screenshots img {
+    display: block; 
+    width: 100%; 
+    height: auto; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  }
+  .app-screenshots .shot { flex: 1 1 300px; max-width: 520px; }
+</style>
+
+<div class="app-screenshots" role="group" aria-label="LucidWave app screenshots">
+  <picture class="shot">
+    <source srcset="assets/lucidwave-screen-1-new-600.webp" media="(max-width: 640px)" type="image/webp">
+    <source srcset="assets/lucidwave-screen-1-new-1000.webp" media="(min-width: 641px)" type="image/webp">
+    <img src="assets/lucidwave-screen-1-new-1000.webp" alt="LucidWave — Home tiles: Calendar & Reminder, How To, Science, Practice, Join">
+  </picture>
+
+  <picture class="shot">
+    <source srcset="assets/lucidwave-screen-2-new-600.webp" media="(max-width: 640px)" type="image/webp">
+    <source srcset="assets/lucidwave-screen-2-new-1000.webp" media="(min-width: 641px)" type="image/webp">
+    <img src="assets/lucidwave-screen-2-new-1000.webp" alt="LucidWave — Practice screen with light & sound controls and timer">
+  </picture>
+</div>
+<!-- END: LucidWave hero screenshots (responsive) -->
+
 <p class="hero-copy">
-        LucidWave makes it easy to practice <strong>40 Hz light &amp; sound</strong>—with background audio for
-        sound‑only sessions, optional gentle screen flicker, and simple timers that fit your day.
+        LucidWave makes it easy to practice <strong>40 Hz light &amp; sound</strong>—with background audio for
+        sound-only sessions, optional gentle screen flicker, and simple timers that fit your day.
         Created in honor of a loved one, with a single purpose: make caring for the mind more accessible.
         <strong>100% of profits from subscriptions are donated to brain research and care.</strong>
 </p>
@@ -77,7 +108,7 @@
 <section class="highlight-science">
 <h2>The Science Behind LucidWave</h2>
 <p>
-        Curious about how 40 Hz light and sound could support brain health?
+        Curious about how 40 Hz light and sound could support brain health?
         Learn what researchers are exploring and how LucidWave turns that into a daily habit.
       </p>
 <a class="btn-science" href="science.html">Read More</a>
@@ -86,8 +117,8 @@
 <section class="about-teaser">
 <h2>Why I Built LucidWave</h2>
 <p>
-        I’m a sales guy with zero development experience. After discovering the 40 Hz research in May 2025,
-        I set out to build a simple, low‑cost, no‑ads app that could help millions—powered end‑to‑end by AI.
+        I’m a sales guy with zero development experience. After discovering the 40 Hz research in May 2025,
+        I set out to build a simple, low-cost, no-ads app that could help millions—powered end-to-end by AI.
       </p>
 <a class="btn-about" href="about.html">Read the full story</a>
 </section>
@@ -95,12 +126,12 @@
 <section aria-labelledby="practice-title" class="story" id="practice">
 <h2 id="practice-title">How to practice it</h2>
 <p>
-        Many research protocols use about <strong>60 minutes daily</strong> of 40 Hz stimulation. Ease in and
+        Many research protocols use about <strong>60 minutes daily</strong> of 40 Hz stimulation. Ease in and
         build a routine that fits your life:
       </p>
-<p><strong>Sound‑only in the background:</strong> Start with 40 Hz audio while you do other tasks. LucidWave supports background audio so you can keep using your phone.</p>
-<p><strong>Light + sound at night:</strong> Before bedtime, with lights off, place your phone face‑up. The indirect flicker can be present without staring directly at the screen.</p>
-<p class="muted">LucidWave is for wellness and self‑care. It isn’t a medical device and doesn’t diagnose, treat, cure, or prevent disease. If you have a history of photosensitive epilepsy or similar conditions, consult a clinician before using flicker.</p>
+<p><strong>Sound-only in the background:</strong> Start with 40 Hz audio while you do other tasks. LucidWave supports background audio so you can keep using your phone.</p>
+<p><strong>Light + sound at night:</strong> Before bedtime, with lights off, place your phone face-up. The indirect flicker can be present without staring directly at the screen.</p>
+<p class="muted">LucidWave is for wellness and self-care. It isn’t a medical device and doesn’t diagnose, treat, cure, or prevent disease. If you have a history of photosensitive epilepsy or similar conditions, consult a clinician before using flicker.</p>
 </section>
 <!-- Story (personal narrative) -->
 <section aria-labelledby="story-title" class="story" id="story">
@@ -110,8 +141,8 @@
         Toward the end of her life, she didn’t recognize her own family. That loss changed me.
       </p>
 <p>
-        I’m not an engineer and had no app‑building experience, but I had a mission:
-        honor my mom and make a gentle, accessible tool inspired by promising 40 Hz research.
+        I’m not an engineer and had no app-building experience, but I had a mission:
+        honor my mom and make a gentle, accessible tool inspired by promising 40 Hz research.
         <strong>100% of profits from subscriptions go directly to brain research and supporting brain care.</strong>
 </p>
 <div class="story-media">
@@ -210,7 +241,7 @@
 <!-- FAQ teaser -->
 <section class="faq-teaser">
 <h2>Questions?</h2>
-<p>Learn how LucidWave fits into a daily brain‑care routine, safety guidance, and more.</p>
+<p>Learn how LucidWave fits into a daily brain-care routine, safety guidance, and more.</p>
 <a class="button btn-primary" href="faq.html">Read the FAQ →</a>
 </section>
 </main>
